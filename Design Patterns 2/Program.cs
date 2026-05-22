@@ -1,5 +1,6 @@
 ﻿using Facotory_Patterrn;
 using Sate_Pattern;
+using SimpleCommandPattern;
 
 namespace Design_Patterns_2
 {
@@ -17,20 +18,38 @@ namespace Design_Patterns_2
             //notification2.Notify();
 
 
-            Button button = new Button();
+            //Button button = new Button();
 
-            try
-            {
-                button.Pause();
-                button.Play();
+            //try
+            //{
+            //    button.Pause();
+            //    button.Play();
 
-            }
-            catch (Exception ex)
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+
+
+
+
+            CommandInvoker commandInvoker = new CommandInvoker();
+            while (true)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine("Enter 1 or 2");
+                int a = Convert.ToInt32(Console.ReadLine());
+                if (a == 1)
+                    commandInvoker.AddCommand(new HelloCommand());
+                else if (a == 2)
+                    commandInvoker.AddCommand(new WelcomeComman());
+                else
+                    break;
             }
+
+            commandInvoker.ExecuteCommands();
+
         }
 
     }
-}
 }

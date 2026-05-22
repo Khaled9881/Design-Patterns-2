@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facotory Patterrn", "Facoto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sate Pattern", "Sate Pattern\Sate Pattern.csproj", "{76A2D2DD-AC04-4BAC-ADB2-A95BADAB96EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCommandPattern", "SimpleCommandPattern\SimpleCommandPattern.csproj", "{CCED6B3C-10A9-4F6E-87F6-CE6F38C327D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{76A2D2DD-AC04-4BAC-ADB2-A95BADAB96EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76A2D2DD-AC04-4BAC-ADB2-A95BADAB96EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76A2D2DD-AC04-4BAC-ADB2-A95BADAB96EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCED6B3C-10A9-4F6E-87F6-CE6F38C327D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCED6B3C-10A9-4F6E-87F6-CE6F38C327D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCED6B3C-10A9-4F6E-87F6-CE6F38C327D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCED6B3C-10A9-4F6E-87F6-CE6F38C327D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

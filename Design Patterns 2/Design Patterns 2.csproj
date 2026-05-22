@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Facotory Patterrn\Facotory Patterrn.csproj" />
     <ProjectReference Include="..\Sate Pattern\Sate Pattern.csproj" />
+    <ProjectReference Include="..\SimpleCommandPattern\SimpleCommandPattern.csproj" />
   </ItemGroup>
 
 </Project>
