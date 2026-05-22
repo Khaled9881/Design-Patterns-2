@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Builderpattern2\Builderpattern2.csproj" />
+    <ProjectReference Include="..\ChainOdResponsibility\ChainOdResponsibility.csproj" />
+    <ProjectReference Include="..\DecoratorPattern\DecoratorPattern.csproj" />
     <ProjectReference Include="..\Facotory Patterrn\Facotory Patterrn.csproj" />
     <ProjectReference Include="..\Sate Pattern\Sate Pattern.csproj" />
     <ProjectReference Include="..\SimpleCommandPattern\SimpleCommandPattern.csproj" />

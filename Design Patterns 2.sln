@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCommandPattern", "Sim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builderpattern2", "Builderpattern2\Builderpattern2.csproj", "{8C20C5E4-98D0-4A09-BCCE-45BBF40B2CAD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern", "DecoratorPattern\DecoratorPattern.csproj", "{5A65285E-6811-414E-90CE-C4E0184DB1C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOdResponsibility", "ChainOdResponsibility\ChainOdResponsibility.csproj", "{060B4671-9E34-41A0-8984-08DDBA031470}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{8C20C5E4-98D0-4A09-BCCE-45BBF40B2CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C20C5E4-98D0-4A09-BCCE-45BBF40B2CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C20C5E4-98D0-4A09-BCCE-45BBF40B2CAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A65285E-6811-414E-90CE-C4E0184DB1C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A65285E-6811-414E-90CE-C4E0184DB1C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A65285E-6811-414E-90CE-C4E0184DB1C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A65285E-6811-414E-90CE-C4E0184DB1C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{060B4671-9E34-41A0-8984-08DDBA031470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{060B4671-9E34-41A0-8984-08DDBA031470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{060B4671-9E34-41A0-8984-08DDBA031470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{060B4671-9E34-41A0-8984-08DDBA031470}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

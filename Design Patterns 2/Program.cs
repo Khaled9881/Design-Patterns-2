@@ -1,4 +1,6 @@
 ﻿using Builderpattern2;
+using ChainOdResponsibility;
+using DecoratorPattern;
 using Facotory_Patterrn;
 using Sate_Pattern;
 using SimpleCommandPattern;
@@ -75,9 +77,58 @@ namespace Design_Patterns_2
             //macroCommand.Redo();
             //macroCommand.Execute();
 
-            Pizaa pizaa = new PizaaBuilder().SetSize("Medium").AddPepperoni().AddCheese().Build();
+            //Pizaa pizaa = new PizaaBuilder().SetSize("Medium").AddPepperoni().AddCheese().Build();
 
-            Console.WriteLine(pizaa);
+            //Console.WriteLine(pizaa);
+
+
+
+            //
+            //ICoffee coffee = new SimpleCoffee();
+            //Console.WriteLine(coffee.GetDescription());
+            //Console.WriteLine(coffee.GetPrice());
+
+            //coffee = new MilkDecorator(coffee);
+            //Console.WriteLine(coffee.GetDescription());
+            //Console.WriteLine(coffee.GetPrice());
+
+            //coffee = new SugarDecorator(coffee);
+            //Console.WriteLine(coffee.GetDescription());
+            //Console.WriteLine(coffee.GetPrice());
+
+
+            //  
+
+            Employee employee = new Employee()
+            {
+                Id = 1,
+                Name = "Test",
+                JobTitle = JobTitle.CTO
+            };
+
+            VacationRequest request = new VacationRequest()
+            {
+                employee = employee,
+                StartDate = DateTime.Now,
+                EndDate = DateTime.Now.AddDays(10)
+            };
+
+            IApprovalHandler teamLeaderApprovalHandler = new TeamLeaderApprovalHandler();
+            IApprovalHandler technicalManagerApprovalHandler = new TechnicalManagerApprovalHandler();
+            IApprovalHandler ctoApprovalHandler = new CTOApprovalHandler();
+            IApprovalHandler ceoApprovalHandler = new CEOApprovalHandler();
+
+            teamLeaderApprovalHandler.SetNextHandler(technicalManagerApprovalHandler);
+            technicalManagerApprovalHandler.SetNextHandler(ctoApprovalHandler);
+            ctoApprovalHandler.SetNextHandler(ceoApprovalHandler);
+
+            teamLeaderApprovalHandler.Process(request);
+
+
+
+
+
+
 
         }
 
