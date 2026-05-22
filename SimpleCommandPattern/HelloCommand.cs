@@ -8,9 +8,18 @@ namespace SimpleCommandPattern
 {
     public class HelloCommand : ICommand
     {
+        private int count = 0;
         public void Execute()
         {
-            Console.WriteLine("Hello Friend");
+            count++;
+            Console.WriteLine($"Hello Friend {count}");
         }
+        public void Undo()
+        {
+            count--;
+        }
+
+
+
     }
 }

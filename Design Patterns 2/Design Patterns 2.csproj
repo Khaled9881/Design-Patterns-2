@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Builderpattern2\Builderpattern2.csproj" />
     <ProjectReference Include="..\Facotory Patterrn\Facotory Patterrn.csproj" />
     <ProjectReference Include="..\Sate Pattern\Sate Pattern.csproj" />
     <ProjectReference Include="..\SimpleCommandPattern\SimpleCommandPattern.csproj" />
